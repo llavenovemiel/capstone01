@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Anton', sans-serif;
 }
 
 /*Landing Styling*/
@@ -25,17 +26,20 @@
 	.navbar {
 		background-color: black;
 		width: 100%;
-		height: 5vh;
+		height: 7vh;
+		border-bottom: 0.5vh solid #FF7400;
 	}
 
 		.navbar a {
 			color: #FF7400;
 			font-family: 'Anton', sans-serif;
+			f
 		}
+
 	/*End Navbar Styling*/
 
 	.home-banner {
-		min-height: 50vh;
+		min-height: 60vh;
 		background-image: url(../images/team-banner.jpg);
 		background-position: top;
 		background-size: cover;
@@ -43,12 +47,15 @@
 	}
 
 		.banner-text {
-			color: white;
+			color: black;
 			font-size: 2.3rem;
+			font-family: 'Fjalla One', sans-serif;
+			/*font-weight: 700;*/
+			background-color: rgba(247, 156, 138, 0.3);
 		}
 
 	.home-about {
-		min-height: 45vh;
+		min-height: 33vh;
 		background-color: #e3e4e5;
 
 		}
@@ -56,22 +63,111 @@
 			.habout-text {
 				color: black;
 				font-size: 1rem;
+
 			}
 
 	.home-gallery {
-		height: 95vh;
-		background-color: gray;
+		height: 93vh;
+		background-color: #e3e4e5;
 	}
 
 		.gallery-container {
-			height: 100%
+			height: 100%;
+			
 		}
 		
-			.pic {
+			.image-box {
 				height: 30%;
-				background-color: white;
-				border: 1px solid black;
+				/*border: 1px solid black;*/
 			}
+
+
+				.front {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					transform: perspective(500px) rotateY(0deg);
+					transition: transform 0.5s linear;
+					backface-visibility: hidden;
+				}
+
+				.back {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					background-color: #FF7400;
+					color: black;
+					transform: perspective(500px) rotateY(180deg);
+					transition: transform 0.5s linear;
+					backface-visibility: hidden;
+				}
+
+				.image-box:hover > .front {
+					transform: rotateY(-180deg);
+				}
+
+				.image-box:hover > .back {
+					transform: rotateY(0deg);
+				}
+
+				.image1 {
+					background-image: url("../images/project1.jpg");
+					background-position: center;
+					background-size: cover;
+				}
+
+				.image2 {
+					background-image: url("../images/project2.jpg");
+					background-position: center;
+					background-size: cover;
+				}
+
+				.image3 {
+					background-image: url("../images/project3.jpg");
+					background-position: bottom;
+					background-size: cover;
+				}
+
+				.image4 {
+					background-image: url("../images/project4.jpg");
+					background-position: center;
+					background-size: cover;
+				}
+
+				.image5 {
+					background-image: url("../images/project5.jpg");
+					background-position: top;
+					background-size: cover;
+				}
+
+				.image6 {
+					background-image: url("../images/project6.jpg");
+					background-position: center;
+					background-size: cover;
+				}
+
+				.image7 {
+					background-image: url("../images/project7.jpg");
+					background-position: center;
+					background-size: cover;
+				}
+
+				.image8 {
+					background-image: url("../images/project8.jpg");
+					background-position: center;
+					background-size: cover;
+				}
+
+				.image9 {
+					background-image: url("../images/project9.jpg");
+					background-position: bottom;
+					background-size: cover;
+				}
+
+
+					
+
+
 
 	.home-footer {
 		height: 5vh;
