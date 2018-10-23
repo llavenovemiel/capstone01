@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Landing Styling*/
+
+.main {
+	height: 100vh;
+	background-image: url("../images/landing-bg.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+/*End Landing Styling*/
+
+/*Home Styling*/
+
+	/*Navbar Styling*/
+	.navbar {
+		background-color: black;
+		width: 100%;
+		height: 5vh;
+	}
+
+		.navbar a {
+			color: #FF7400;
+			font-family: 'Anton', sans-serif;
+		}
+	/*End Navbar Styling*/
+
+	.home-banner {
+		min-height: 50vh;
+		background-image: url(../images/team-banner.jpg);
+		background-position: top;
+		background-size: cover;
+
+	}
+
+		.banner-text {
+			color: white;
+			font-size: 2.3rem;
+		}
+
+	.home-about {
+		min-height: 45vh;
+		background-color: #e3e4e5;
+
+		}
+
+			.habout-text {
+				color: black;
+				font-size: 1rem;
+			}
+
+	.home-gallery {
+		height: 95vh;
+		background-color: gray;
+	}
+
+		.gallery-container {
+			height: 100%
+		}
+		
+			.pic {
+				height: 30%;
+				background-color: white;
+				border: 1px solid black;
+			}
+
+	.home-footer {
+		height: 5vh;
+		background-color: black;
+		color: white;
+	}
+
+
+
+
+
+
+/*End Home Styling*/
