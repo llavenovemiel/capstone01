@@ -24,17 +24,31 @@
 
 	/*Navbar Styling*/
 	.navbar {
-		background-color: black;
+		background-color: #141414;
 		width: 100%;
-		height: 7vh;
+		min-height: 7vh;
 		border-bottom: 0.5vh solid #FF7400;
 	}
+
+		#navbar-toggler {
+			border: none; 
+		}
+
+		#toggler-icon {
+			background-image: url("../images/menu-icon.png");
+			background-position: center;
+			background-size: cover;
+		}
+
 
 		.navbar a {
 			color: #FF7400;
 			font-family: 'Anton', sans-serif;
-			f
 		}
+
+			.navbar-nav {
+				padding-right: 0;
+			}
 
 	/*End Navbar Styling*/
 
@@ -57,28 +71,25 @@
 	.home-about {
 		min-height: 33vh;
 		background-color: #e3e4e5;
-
 		}
 
 			.habout-text {
 				color: black;
-				font-size: 1rem;
-
+				font-size: 1.5rem;
 			}
 
 	.home-gallery {
-		height: 93vh;
+		/*height: 93vh;*/
 		background-color: #e3e4e5;
 	}
 
 		.gallery-container {
-			height: 100%;
+			/*height: 100%;*/
 			
 		}
 		
 			.image-box {
-				height: 30%;
-				/*border: 1px solid black;*/
+				min-height: 29vh;
 			}
 
 
@@ -89,6 +100,7 @@
 					transform: perspective(500px) rotateY(0deg);
 					transition: transform 0.5s linear;
 					backface-visibility: hidden;
+					border-radius: 5px;
 				}
 
 				.back {
@@ -100,6 +112,7 @@
 					transform: perspective(500px) rotateY(180deg);
 					transition: transform 0.5s linear;
 					backface-visibility: hidden;
+					border-radius: 5px;
 				}
 
 				.image-box:hover > .front {
@@ -165,19 +178,121 @@
 				}
 
 
-					
-
-
 
 	.home-footer {
-		height: 5vh;
-		background-color: black;
-		color: white;
+		min-height: 6vh;
+		background-color: #141414; /*incorporate to all applicable*/
+	}
+		.home-footer p {
+			text-decoration: none;
+			color: #FF7400;
+			font-size: 1rem;
+			font-family: 'Anton', sans-serif;
+
+		}
+
+		.home-footer a {
+			text-decoration: none;
+			color: #FF7400;
+			font-size: 1.5rem;
+		}
+
+
+	/*Mobile Rules*/
+	@media only screen and (max-width: 400px) {
+		
+		.habout-text {
+			font-size: 0.8rem;
+		}
+
+
+		.home-footer {
+			min-height: 7vh;
+		}
+			.home-footer p {
+				text-decoration: none;
+				color: #FF7400;
+				font-size: 0.8rem;
+			}
+			
+			.home-footer a {
+				font-size: 1.5rem;
+			}
+	}
+	/*End Mobile Rules*/
+
+
+	/*Tablet Rules*/
+	@media only screen and (min-width: 401px) and (max-width: 960px)  {
+		.habout-text {
+			color: black;
+			font-size: 1.2rem;
+		}
+	}
+	/*End Tablet Rules*/
+
+/*End Home Styling*/
+
+/*About Styling*/
+.about-body {
+	min-height: 87vh;
+}
+
+	/*.about-left {
+		height: 87vh;
+	}*/
+
+	.about-right {
+		border-left: 2px solid #383333;
+	}
+
+		.right-title {
+			min-height: 5%;
+			background-color: #383333;
+			color: #f1f1f1;
+		}
+
+		.right-content {
+		/*min-height: 10%;*/
+		border: 1px solid black;
+		}
+
+	.left-content {
+		/*border: 1px solid black;*/
+		/*min-height: 40%;*/
 	}
 
 
+	/*Mobile Rules*/
+	@media only screen and (max-width: 400px) {
+		
+		.about-right {
+			border-left: none;
+			border-top: 2px solid #383333;
+		}
+
+		.left-content h2 {
+			font-size: 1rem;
+		}
+
+		.left-content p {
+			font-size: 0.8rem;
+		}
+
+		.right-content {
+			font-size: 0.8rem;
+		}
+
+	}
+	/*End Mobile Rules*/
 
 
+	/*Tablet Rules*/
+	@media only screen and (min-width: 401px) and (max-width: 960px)  {
+		
+	}
+	/*End Tablet Rules*/
+	
+	
 
-
-/*End Home Styling*/
+/*End About Styling*/
