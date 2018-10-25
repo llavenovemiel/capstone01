@@ -2,7 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Anton', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Source Sans Pro', sans-serif;*/
 }
 
 /*Landing Styling*/
@@ -19,6 +20,7 @@
 }
 
 /*End Landing Styling*/
+/****************************************************************/
 
 /*Home Styling*/
 
@@ -43,7 +45,7 @@
 
 		.navbar a {
 			color: #FF7400;
-			font-family: 'Anton', sans-serif;
+			font-weight: 700;
 		}
 
 			.navbar-nav {
@@ -57,14 +59,12 @@
 		background-image: url(../images/team-banner.jpg);
 		background-position: top;
 		background-size: cover;
-
 	}
 
 		.banner-text {
 			color: black;
 			font-size: 2.3rem;
-			font-family: 'Fjalla One', sans-serif;
-			/*font-weight: 700;*/
+			font-weight: 700;
 			background-color: rgba(247, 156, 138, 0.3);
 		}
 
@@ -74,8 +74,9 @@
 		}
 
 			.habout-text {
+				font-family: 'Source Sans Pro', sans-serif;
 				color: black;
-				font-size: 1.5rem;
+				font-size: 1.2rem;
 			}
 
 	.home-gallery {
@@ -187,8 +188,7 @@
 			text-decoration: none;
 			color: #FF7400;
 			font-size: 1rem;
-			font-family: 'Anton', sans-serif;
-
+			font-family: 'Montserrat', sans-serif;
 		}
 
 		.home-footer a {
@@ -196,6 +196,17 @@
 			color: #FF7400;
 			font-size: 1.5rem;
 		}
+
+
+
+	/*Tablet Rules*/
+	@media only screen and (min-width: 401px) and (max-width: 960px)  {
+		.habout-text {
+			color: black;
+			font-size: 1.2rem;
+		}
+	}
+	/*End Tablet Rules*/
 
 
 	/*Mobile Rules*/
@@ -222,69 +233,58 @@
 	/*End Mobile Rules*/
 
 
-	/*Tablet Rules*/
-	@media only screen and (min-width: 401px) and (max-width: 960px)  {
-		.habout-text {
-			color: black;
-			font-size: 1.2rem;
-		}
-	}
-	/*End Tablet Rules*/
 
 /*End Home Styling*/
+/****************************************************************/
 
 /*About Styling*/
 .about-body {
 	min-height: 87vh;
 }
-
-	/*.about-left {
-		height: 87vh;
-	}*/
-
+	
+	.about-left, 
 	.about-right {
-		border-left: 2px solid #383333;
+		height: auto;
+	}	
+
+	.left-content,
+	.right-content {
+		height: 50%;
+		
 	}
 
-		.right-title {
-			min-height: 5%;
+		.left-content  h2,
+		.right-content  h2 {
 			background-color: #383333;
 			color: #f1f1f1;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1.5rem;
+			text-align: center;
 		}
 
+		.left-content  p,
 		.right-content {
-		/*min-height: 10%;*/
-		border: 1px solid black;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 1.1rem;
+
 		}
 
-	.left-content {
-		/*border: 1px solid black;*/
-		/*min-height: 40%;*/
-	}
-
-
-	/*Mobile Rules*/
-	@media only screen and (max-width: 400px) {
-		
-		.about-right {
-			border-left: none;
-			border-top: 2px solid #383333;
+		#testi-image {
+			height: 25vh; /*add media query*/
 		}
 
-		.left-content h2 {
-			font-size: 1rem;
+		.expertise-img-1,
+		.expertise-img-2,
+		.expertise-img-3,
+		.expertise-img-4,
+		.expertise-img-5 {
+			display: none;
 		}
 
-		.left-content p {
-			font-size: 0.8rem;
+		.expertise-img .shown {
+			display: inline !important;
+			height: 100%;
 		}
-
-		.right-content {
-			font-size: 0.8rem;
-		}
-
-	}
-	/*End Mobile Rules*/
 
 
 	/*Tablet Rules*/
@@ -293,6 +293,13 @@
 	}
 	/*End Tablet Rules*/
 	
+
+	/*Mobile Rules*/
+	@media only screen and (max-width: 400px) {
+
+	}
+	/*End Mobile Rules*/
 	
 
 /*End About Styling*/
+/****************************************************************/
