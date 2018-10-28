@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="IE=Edge">
+
+	<title>Careers</title>
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="assets/images/icon.png">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro:400,700" rel="stylesheet">
+	
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
+
+</head>
+
+
+<body>
+
+	<div class="main-about container-fluid px-0">
+
+		<nav id="navbar" class="navbar navbar-expand-lg sticky-top">
+			<a class="navbar-brand" href="index.html"><i class="fas fa-building"></i> Ace Engineering</a>
+
+			<button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
+				<span id="toggler-icon" class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navbar-nav" class="collapse navbar-collapse">
+				<ul class="col-lg-12 navbar-nav d-flex justify-content-around">
+					<li class="nav-item text-center">
+						<a class="" href="home.html">Home</a>
+					</li>
+
+					<li class="nav-item text-center">
+						<a class="" href="about.html">Who We Are</a>
+					</li>	
+
+					<li class="nav-item text-center">
+						<a class="" href="projects.html">What We Do</a>
+					</li>
+
+					<li class="nav-item text-center">
+						<a class="" href="contact.html">Where to Reach Us</a>
+					</li>	
+
+					<li class="nav-item text-center">
+						<a class="active" href="careers.html">What We Look For</a>
+					</li>
+				</ul>
+			</div>
+			
+		</nav> <!-- end of navbar -->
+
+
+
+		<div id="careers-body" class="careers-body container-fluid row mx-0 px-0">
+			<div class="careers-banner col-12 col-md-8 px-0 text-center">
+				<p class="mt-3">Shape the future with us.</p>
+			</div>
+			<div class="col-12 col-md-4 px-0">								
+				<div class="careers-profs text-center d-flex flex-column justify-content-center" data-toggle="modal" data-target="#exampleModalCenter">
+					Professional
+				</div>			
+				<div class="careers-grads text-center d-flex flex-column justify-content-center" data-toggle="modal" data-target="#exampleModalCenter">
+					Graduates
+				</div>							
+			</div>
+			
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			    	
+			    	<div class="modal-header">
+			        	<h5 class="modal-title" id="modal-title">Sadly, all positions have been filled. But we'd love to have your credentials. We'll keep it safe for you.</h5>
+			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          		<span aria-hidden="true">&times;</span>
+			        	</button>
+			      	</div>
+			      	
+			      	<div class="modal-body">
+				      	<form>
+							<div class="form-group">
+						    	<label for="name">Name</label>
+						    	<input type="text" class="form-control" id="name" placeholder="Enter name">
+						  	</div>
+
+							<div class="form-group">
+						    	<label for="email">Email address</label>
+						    	<input type="email" class="form-control" id="email" placeholder="Enter email">
+						    	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						  	</div>
+
+						  	<div class="form-group">
+    							<label for="resume">Upload resume</label>
+								<input type="file" class="form-control-file" id="resume">
+							</div>
+
+						  	<div class="form-group">
+   	 							<label for="pitch">Enter your pitch below</label>
+    							<textarea class="form-control" id="pitch" rows="3" placeholder="Tell us something about yourself."></textarea>
+  							</div>
+
+						</form>
+			      	</div>
+
+			      	<div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn save-button" data-dismiss="modal">Save and Send</button>
+				    </div>
+
+			    </div>
+			  </div>
+			</div> <!-- end modal -->
+
+
+
+
+
+		</div> <!-- end of careers body -->
+
+
+
+
+
+		<footer class="home-footer container-fluid row d-flex flex-row align-items-center mx-0 px-0 py-1">
+			<div class="copyright col-12 col-md-7 d-flex flex-row justify-content-around align-items-center mb-0 px-0">
+				<p class="mb-0">Copyright &copy; 2018</p>
+				<p class="mb-0">Ace Engineering. All rights reserved</p>
+			</div>
+			<div class="social-links col-12 col-md-3 offset-md-2 d-flex flex-row justify-content-around mb-0 px-0">
+				<a href=""><i class="fab fa-facebook-square"></i></a>
+				<a href=""><i class="fab fa-twitter-square"></i></a>
+				<a href=""><i class="fab fa-linkedin"></i></a>
+			</div>
+
+		</footer> <!-- end of footer -->	
+		
+	</div> <!-- end of container-fluid -->
+
+	
+
+
+
+
+
+
+
+
+
+	<!-- jquery first then popper then bootstrap js -->
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	
+	<!-- external bootstrap js -->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- external js -->
+	<script src="assets/js/script.js"></script>
+
+</body>
+</html>

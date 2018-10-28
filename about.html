@@ -9,6 +9,9 @@
 
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="assets/images/icon.png">
 
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -26,8 +29,8 @@
 
 	<div class="main-about container-fluid px-0">
 
-		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
-			<a class="navbar-brand" href="index.html">Ace Engineering</a>
+		<nav id="navbar" class="navbar navbar-expand-lg sticky-top">
+			<a class="navbar-brand" href="index.html"><i class="fas fa-building"></i> Ace Engineering</a>
 
 			<button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
 				<span id="toggler-icon" class="navbar-toggler-icon"></span>
@@ -36,19 +39,23 @@
 			<div id="navbar-nav" class="collapse navbar-collapse">
 				<ul class="col-lg-12 navbar-nav d-flex justify-content-around">
 					<li class="nav-item text-center">
-						<a class="active" href="home.html">HOME</a>
+						<a class="" href="home.html">Home</a>
 					</li>
 
 					<li class="nav-item text-center">
-						<a class="" href="about.html">WHO WE ARE</a>
+						<a class="active" href="about.html">Who We Are</a>
 					</li>	
 
 					<li class="nav-item text-center">
-						<a class="" href="projects.html">WHAT WE DO</a>
+						<a class="" href="projects.html">What We Do</a>
+					</li>
+
+					<li class="nav-item text-center">
+						<a class="" href="contact.html">Where to Reach Us</a>
 					</li>	
 
 					<li class="nav-item text-center">
-						<a class="" href="careers.html">JOIN US</a>
+						<a class="" href="careers.html">What We Look For</a>
 					</li>
 				</ul>
 			</div>
@@ -59,32 +66,25 @@
 
 		<div id="about-body" class="about-body container-fluid row mx-0">
 			
-			<aside class="about-left col-12 col-md-8 my-2 py-2">
+			<aside class="about-left col-12 col-lg-8 my-2 py-2">
 				<div class="left-content">
-					<h2>About Us</h2>
-					<p class="mb-1">Founded by John Dela Cruz in 1995, Ace Engineering has been the trusted partner of industry and governments worldwide, helping them deliver more than 5000 projects in 30 countries on all seven continents. Today, Ace Engineering is one of the most respected global engineering and construction management companies. Together with our customers, we deliver landmark projects that create long-term progress and economic growth.</p>
-					<p>Our core values are ethics, safety, quality, people, culture, relationships, innovation and sustainability, and our covenants are integrity, respect, collaboration, trust, and delivery. They are what we believe, what customers can expect, and how we deliver.</p>
-				</div>
-				<div class="left-content">
-					<h2 class>Our Expertise</h2>
-					<div class="row">
+					<h2 class="mt-3">About Us</h2>
+					<div class="left-content-container">
+						<p class="mb-1 text-justify">Founded by John Cruz in 1995, Ace Engineering has been the trusted partner of industry and governments worldwide. We have delivered more than 5000 projects in 25 countries. Today, Ace Engineering is one of the most respected global engineering and construction management companies. Through close cooperation with our clients and all stake-holders, we deliver high-quality landmark projects that have significant positive impacts to economic progress.</p>
 						
-						<div class="col-12 col-md-5">
-							<p class="mb-1 expertise-1">Seismic Engineering</p>
-							<p class="mb-1 expertise-2">High and Mid Rise Buildings</p>
-							<p class="mb-1 expertise-3">Traffic Engineering</p>
-							<p class="mb-1 expertise-4">Transportation Engineering</p>
-							<p class="mb-1 expertise-5">Environmental Impact Assessment</p>
-						</div>
+						<p class="mb-1 text-justify">Ace Engineering is known for its commitment to sustainability and innovation. We have received over 100 awards worldwide and we strive for continuous improvement. Our efforts for sustainable engineering have been recognized by governments and local communities. Ace Engineering believes in the balance between technology and environment and we never compromise.</p>
 						
-						<div class="col-12 col-md-7 expertise-img">
-							<img style="max-height: 50%;" class=" expertise-img-1" src="assets/images/expertise-1.jpg">
-							<img style="max-height: 50%;" class="img-fluid expertise-img-2" src="assets/images/expertise-2.jpg">
-							<img style="max-height: 50%;" class="img-fluid expertise-img-3" src="assets/images/expertise-3.jpg">
-							<img class="img-fluid expertise-img-4" src="assets/images/expertise-4.jpg">
-							<img class="img-fluid expertise-img-5" src="assets/images/expertise-5.jpg">
-						</div>	
+						<p class="mb-0 text-justify">We strongly believe in and promote ethics, safety, quality, people, culture, relationships, innovation and sustainability. And we abide by integrity, respect, collaboration, trust, and delivery. These are the foundations of our service.</p>
+					</div>
 
+					<h2 class="mt-3">Recent Awards</h2>
+					<div class="right-content-container text-justify">
+						<p class="mb-0">Top 500 Companies in Asia, 2017</p>
+						<p class="mb-0">Engineering Excellence Award, 2018</p>
+						<p class="mb-0">Most Innovative Engineering Company (ASCE), 2017</p>
+						<p class="mb-0">Environment and Engineering Solutions Award (CENT), 2017</p>
+						<p class="mb-0">Commitment to Sustainable Engineering Award, 2018</p>
+						<p class="mb-0">Top 100 Companies in the Philippines, 2018</p>
 					</div>
 
 				</div>
@@ -92,44 +92,29 @@
 			</aside> <!-- end of about left -->
 			
 
-			<aside class="about-right col-12 col-md-4 my-2 py-2">
-				<div class="right-content">
-					<h2>Awards</h2>
-					<div class="right-content-container text-center">
-						<div class="right-content">Top 500 Companies in Asia, 2017</div>
-						<div class="right-content">Engineering Excellence Award, 2018</div>
-						<div class="right-content">Most Innovative Engineering Company (ASCE), 2017</div>
-						<div class="right-content">Environment and Engineering Solutions Award (CENT), 2017</div>
-						<div class="right-content">Commitment to Sustainable Engineering Award, 2018</div>
-						<div class="right-content">Top 100 Companies in the Philippines, 2018</div>
+			<aside class="about-right col-12 col-lg-4 my-2 py-2 text-center d-flex flex-column justify-content-center">
+				<h2 id="left-justify"class="mt-0">Testimonials</h2>
+				<div class="testi-loop">
+					<div class="testi-container my-2">	
+						<img id="testi-image1" class="mb-2" src="assets/images/testi-1.jpg">
+						<p id="testi-text1" class="mb-1"></p>
+						<p id="testi-name1" class="mb-1"></p>
 					</div>
-				</div>
 
-				<div class="right-content text-center">
-					<h2>Testimonials</h2>
-					<div class="testi-loop">
-						<img id="testi-image" class="img-fluid mb-2" src="assets/images/testi-1.jpg">
-						<p id="testi-text" class="mb-1"></p>
-						<p id="testi-name"></p>	
+					<div class="testi-container my-2">
+						<img id="testi-image2" class="mb-2" src="assets/images/testi-1.jpg">
+						<p id="testi-text2" class="mb-1"></p>
+						<p id="testi-name2" class="mb-1"></p>	
 					</div>
+						
 				</div>
-				
+										
 			</aside> <!-- end of about right -->
-
 
 
 		</div> <!-- end of about body -->
 
-		<div class="about-contact">
-			
-			<!-- this should contain contact details and map -->
-
-		</div>
-
-
-
-
-		<footer class="home-footer container-fluid row d-flex flex-row align-items-center mx-0 py-1">
+		<footer class="home-footer container-fluid row d-flex flex-row align-items-center mx-0 px-0 py-1">
 			<div class="copyright col-12 col-md-7 d-flex flex-row justify-content-around align-items-center mb-0 px-0">
 				<p class="mb-0">Copyright &copy; 2018</p>
 				<p class="mb-0">Ace Engineering. All rights reserved</p>

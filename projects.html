@@ -10,14 +10,17 @@
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="assets/images/icon.png">
+
 	<!-- bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro:400,700" rel="stylesheet">
 	
 	<!-- external css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
@@ -26,8 +29,8 @@
 
 	<div class="main-home container-fluid px-0">
 
-		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
-			<a class="navbar-brand" href="index.html">Ace Engineering</a>
+		<nav id="navbar" class="navbar navbar-expand-lg sticky-top">
+			<a class="navbar-brand" href="index.html"><i class="fas fa-building"></i> Ace Engineering</a>
 
 			<button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
 				<span id="toggler-icon" class="navbar-toggler-icon"></span>
@@ -48,17 +51,38 @@
 					</li>	
 
 					<li class="nav-item text-center">
-						<a class="" href="careers.html">Join Us</a>
+						<a class="" href="contact.html">Where to Reach Us</a>
+					</li>
+
+					<li class="nav-item text-center">
+						<a class="" href="careers.html">What We Look For</a>
 					</li>
 				</ul>
 			</div>
 			
 		</nav> <!-- end of navbar -->
 
+		<div id="projects-body" class="projects-body container-fluid row mx-0 d-flex flex-column justify-content-around">
+			<h2 class="text-center">Our Expertise</h2>
+			<div class="scene">
+				<div class="carousel">
+					<div class="cell">Mid-Rise Buildings</div>
+					<div class="cell">High-Rise Buildings</div>
+					<div class="cell">Dome and Irregular Structures</div>
+					<div class="cell">Long Span Bridges</div>
+					<div class="cell">Traffic and Transportation</div>
+					<div class="cell">Environmental Impact Assessment</div>
+				</div>
+			</div>
 
+			<div class="buttons mt-3 text-center">
+  				<button onclick="prev()" class="btn previous-button">&lt</button>
+  				<button onclick="next()" class="btn next-button">&gt</button>
+			</div>
+		</div> <!-- end of projects body -->
 		
 
-		<footer class="home-footer container-fluid row d-flex flex-row align-items-center mx-0 py-1">
+		<footer class="home-footer container-fluid row d-flex flex-row align-items-center mx-0 px-0 py-1">
 			<div class="copyright col-12 col-md-7 d-flex flex-row justify-content-around align-items-center mb-0 px-0">
 				<p class="mb-0">Copyright &copy; 2018</p>
 				<p class="mb-0">Ace Engineering. All rights reserved</p>
@@ -73,16 +97,6 @@
 		
 	</div> <!-- end of container-fluid -->
 
-	
-
-
-
-
-
-
-
-
-
 	<!-- jquery first then popper then bootstrap js -->
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	
@@ -90,5 +104,8 @@
 	
 	<!-- external bootstrap js -->
 	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- external js -->
+	<script src="assets/js/script.js"></script>
 </body>
 </html>
