@@ -28,6 +28,10 @@
 
 /*Home Styling*/
 
+.main-home {
+	position: relative;
+}
+
 /*Navbar Styling*/
 .navbar {
 	background-color: #231f20;
@@ -187,6 +191,24 @@ background-color: #e3e4e5;
 }
 
 
+.back-to-top {
+	width: 20%;
+	position: absolute;
+	bottom: 10vh;
+	right: 40%;
+	display: none;
+}
+
+.back-to-top > a {
+	/*color: #FF7400;*/
+	color: #e3e4e5;
+	font-size: 3rem;
+}
+
+.back-to-top-shown {
+	display: inline;
+}
+
 
 .home-footer {
 	min-height: 10vh;
@@ -205,6 +227,7 @@ background-color: #e3e4e5;
 	color: #FF7400;
 	font-size: 1.5rem;
 }
+
 
 
 

@@ -42,19 +42,18 @@ function next() {
 function prev() {
 	selectedIndex--;
   	rotateCarousel();
-
 }
+//
 
-// var prevButton = document.querySelector('.previous-button');
-// prevButton.addEventListener('click', function() {
-//   selectedIndex--;
-//   rotateCarousel();
-// });
+//for back to top
 
-// var nextButton = document.querySelector('.next-button');
-// nextButton.addEventListener('click', function() {
-//   selectedIndex++;
-//   rotateCarousel();
-// });
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+       $(".back-to-top").addClass("back-to-top-shown");
+   } else if  ($(".back-to-top").hasClass("back-to-top-shown")) {
+   		$(".back-to-top").removeClass("back-to-top-shown");
+   }
+   
+});
 
 
