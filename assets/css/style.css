@@ -6,16 +6,21 @@
 }
 
 /*Landing Styling*/
-
 .main {
 	height: 100vh;
 	background-image: url("../images/landing-bg.jpg");
-	background-position: center;
+	background-position: top;
 	background-size: cover;
 }
 
 .jumbotron {
 	background-color: transparent;
+}
+
+
+ .landing-btn {
+	background-color: #FF7400;
+	color: #e3e4e5;
 }
 
 /*End Landing Styling*/
@@ -362,8 +367,6 @@ background-color: #e3e4e5;
 /*End Careers Styling*/
 /****************************************************************/
 
-
-
 /*Contact Styling*/
 .contact-body {
 	background-color: #e3e4e5;
@@ -477,6 +480,7 @@ background-color: #e3e4e5;
 
 .buttons button{
 	background-color: #FF7400;
+	color: #231f20;
 }
 
 
