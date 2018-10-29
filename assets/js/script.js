@@ -1,7 +1,7 @@
 // for testimonials
-const testimonials = [["assets/images/testi-1.jpg","'Innovative. Best service'","-Donny Tramp, BRE"],
+const testimonials = [["assets/images/testi-1.jpg","'Innovative. Best service'","-Donny Maxwell, BRE"],
 					["assets/images/testi-2.jpg","'Delivered great quality.'","-John Doe, Doe Group"],
-					["assets/images/testi-3.jpg","'Unparalled service.'","-Gloria Royo, R&A"],
+					["assets/images/testi-3.jpg","'Unparalled service.'","-Gloria Carrasco, R&A"],
 					["assets/images/testi-4.jpg","'We trust no one else.'","-Mark Cruz, Flash Construction"],
 					["assets/images/testi-5.jpg","'Quality and innovation.'","-Abby Leigh, Leigh & Lark"]];
 let index = 0;					
@@ -48,12 +48,14 @@ function prev() {
 //for back to top
 
 $(window).scroll(function() {
-   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+   if($(window).scrollTop() + $(window).height() >= 0.99*$(document).height()) {
        $(".back-to-top").addClass("back-to-top-shown");
-   } else if  ($(".back-to-top").hasClass("back-to-top-shown")) {
+   } else  {
    		$(".back-to-top").removeClass("back-to-top-shown");
    }
    
 });
 
+
+// if  ($(".back-to-top").hasClass("back-to-top-shown"))
 
