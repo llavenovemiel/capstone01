@@ -253,6 +253,10 @@
 		font-size: 1.2rem;
 	}
 
+	.back-to-top {
+		bottom: 20vh;
+	}
+
 
 }
 /*End Tablet Rules*/
@@ -281,8 +285,8 @@
 	}
 
 	.back-to-top {
-		position: absolute;
-		bottom: 20vh;
+		bottom: 22vh;
+		right: 1vh;
 	}
 }
 /*End Mobile Rules*/
